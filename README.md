@@ -6,6 +6,38 @@ Built from the ground up with **Python 3**, **PyQt5**, **pyqtgraph**, and **NumP
 
 ---
 
+## 📸 Screenshots & Interface Tour
+
+### 1. Real-Time RF Spectrum Analyzer & Waterfall
+![RF Spectrum and Spectrogram Waterfall](assets/screenshots/01_spectrum_waterfall.png)
+*High-FPS spectrum analyzer with live neon trace, amber peak hold, interactive drag-and-drop demodulation passband channel overlay, and rolling 2D heatmap waterfall spectrogram.*
+
+---
+
+### 2. Wideband Panorama Spectrum Sweep (1 MHz to 6 GHz)
+![Wideband Spectrum Panorama Sweep](assets/screenshots/02_wideband_sweep.png)
+*Rapid frequency sweep scanning broad spans (such as the broadcast FM band, Airband, or up to 6 GHz) with automated peak detection, power measurement, and 1-click **"Tune"** integration.*
+
+---
+
+### 3. Sub-GHz Digital Protocol Inspector (ASK / OOK)
+![Sub-GHz Pulse Inspector](assets/screenshots/03_subghz_pulse_inspector.png)
+*Pulse timing scope with logic-level waveform reconstruction, captured packet history table, binary bitstream inspection, and hexadecimal payload decoding (`0xACD2B169`) with 1-click export to the TX workbench.*
+
+---
+
+### 4. TX Signal Generator & Transmitter Workbench
+![TX Signal Generator Workbench](assets/screenshots/04_tx_workbench.png)
+*Transmitter test bench with live synthesized I/Q waveform preview (Two-Tone IMD, FMCW chirp, CW, FM tone, ASK bursts), hardware safety interlocks, and countdown auto-shutoff timers.*
+
+---
+
+### 5. IQ Constellation & Time-Domain Oscilloscope
+![IQ Constellation and Time Domain Scope](assets/screenshots/05_constellation_scope.png)
+*In-Phase (I) vs Quadrature (Q) polar constellation scatter plot and dual-channel time-domain RF waveform oscilloscope.*
+
+---
+
 ## 🌟 Key Features
 
 ### 1. 📡 60 FPS Real-Time Spectrum & Waterfall
@@ -144,16 +176,18 @@ HackRFStudio/
 │   ├── tx_widget.py         # Signal generator & TX workbench (with safety guards)
 │   └── dialogs.py           # Device info diagnostics, recording dialogs
 ├── assets/
-│   └── style.qss            # Custom dark aerospace SDR theme
+│   ├── style.qss            # Custom dark aerospace SDR theme
+│   └── screenshots/         # UI preview screenshots
 ├── tests/
 │   ├── test_dsp.py          # DSP, demodulator, filter unit tests
 │   ├── test_simulator.py    # RF simulation tests
 │   ├── test_file_io.py      # I/Q file recording & replay tests
 │   ├── test_protocol.py     # Protocol decoder & signal generator tests
 │   └── test_integration.py # Live end-to-end streaming integration tests
+├── generate_screenshots.py  # Automated UI screenshot capture utility
 ├── run_studio.py            # Primary launcher CLI and GUI entry point
 ├── requirements.txt         # Dependencies
-└── README.md                # Documentation
+└── README.md                # Documentation with screenshots
 ```
 
 ---
