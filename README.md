@@ -184,7 +184,6 @@ HackRFStudio/
 │   ├── test_file_io.py      # I/Q file recording & replay tests
 │   ├── test_protocol.py     # Protocol decoder & signal generator tests
 │   └── test_integration.py # Live end-to-end streaming integration tests
-├── generate_screenshots.py  # Automated UI screenshot capture utility
 ├── run_studio.py            # Primary launcher CLI and GUI entry point
 ├── requirements.txt         # Dependencies
 └── README.md                # Documentation with screenshots
