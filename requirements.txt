@@ -1,0 +1,6 @@
+PyQt5>=5.15.0
+pyqtgraph>=0.13.0
+numpy>=1.24.0
+scipy>=1.10.0
+sounddevice>=0.4.6
+QDarkStyle>=3.2.0
