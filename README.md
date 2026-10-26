@@ -1,4 +1,4 @@
-# HackRF Studio 🛰️⚡
+# HackRF Studio
 
 **HackRF Studio** is an advanced, high-performance Software-Defined Radio (SDR) workstation designed specifically for the **Great Scott Gadgets HackRF One** (and HackRF Jawbreaker).
 
@@ -6,7 +6,7 @@ Built from the ground up with **Python 3**, **PyQt5**, **pyqtgraph**, and **NumP
 
 ---
 
-## 📸 Screenshots & Interface Tour
+## Screenshots & Interface Tour
 
 ### 1. Real-Time RF Spectrum Analyzer & Waterfall
 ![RF Spectrum and Spectrogram Waterfall](assets/screenshots/01_spectrum_waterfall.png)
@@ -38,14 +38,14 @@ Built from the ground up with **Python 3**, **PyQt5**, **pyqtgraph**, and **NumP
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
-### 1. 📡 60 FPS Real-Time Spectrum & Waterfall
+### 1. 60 FPS Real-Time Spectrum & Waterfall
 - **FFT Spectrum Analyzer**: Hardware-accelerated curve rendering with customizable FFT sizes (512 to 8192), window functions (Hann, Hamming, Blackman-Harris), exponential averaging, and peak hold.
 - **Dynamic Waterfall (Spectrogram)**: Scrolling 2D color heatmap with selectable palettes (*Turbo, Viridis, Inferno, Night Sky*), dynamic dB range scaling, and contrast control.
 - **Click-to-Tune Receiver Overlay**: Visual passband highlight showing exactly where the receiver is tuned; drag or click anywhere to tune off-center channels in real-time.
 
-### 2. 📻 Multi-Mode Audio Demodulator
+### 2. Multi-Mode Audio Demodulator
 - **Wideband FM (WFM)**: Broadcast radio (88–108 MHz) with quadrature discriminator, 50µs/75µs de-emphasis filtering, and crystal-clear audio.
 - **Narrowband FM (NFM)**: Walkie-talkies, marine radio, and ham repeaters (12.5 kHz / 25 kHz) with audio low-pass filtering.
 - **Amplitude Modulation (AM)**: Aviation airband (118–137 MHz), emergency guard (121.5 MHz), and shortwave with DC blocking and envelope detection.
@@ -54,7 +54,7 @@ Built from the ground up with **Python 3**, **PyQt5**, **pyqtgraph**, and **NumP
 - **Intelligent Squelch & S-Meter**: Real-time RSSI signal strength display (dBFS) with configurable squelch gate to eliminate static background noise.
 - **Automatic Gain Control (AGC)**: Prevents clipping and balances quiet signals automatically.
 
-### 3. 🌐 Wideband Spectrum Sweep (1 MHz – 6 GHz)
+### 3. Wideband Spectrum Sweep (1 MHz - 6 GHz)
 - **High-Speed Band Panorama**: Scans broad frequency ranges up to 6 GHz.
 - **Quick-Scan Presets**:
   - FM Broadcast (87 – 108 MHz)
@@ -66,13 +66,13 @@ Built from the ground up with **Python 3**, **PyQt5**, **pyqtgraph**, and **NumP
   - Full Spectrum Panorama (10 MHz – 6000 MHz)
 - **Automated Emitter / Peak Detector**: Scans and displays discovered transmitters in a table with signal strength and a **"Tune SDR Here"** button.
 
-### 4. 🔑 Sub-GHz Digital Protocol Inspector
+### 4. Sub-GHz Digital Protocol Inspector
 - **ASK / OOK Burst Capture**: Detects remote control signals (car key fobs, garage door openers, 433.92 MHz weather stations, smart meters).
 - **Logic Waveform Scope**: Displays decoded high/low pulses with microsecond timing.
 - **Payload Decoding**: Converts pulse trains to binary strings and hexadecimal payloads (e.g. `0x1A2B3C4D`).
 - **1-Click Transfer**: Send captured hex packets directly to the TX Workbench for replay.
 
-### 5. 📡 TX Signal Generator Workbench
+### 5. TX Signal Generator Workbench
 - **Waveform Synthesizer**: Generates clean I/Q signals for transmission testing:
   - **Continuous Wave (CW)** carrier tone
   - **Two-Tone IMD Test** for amplifier linearity testing
@@ -84,7 +84,7 @@ Built from the ground up with **Python 3**, **PyQt5**, **pyqtgraph**, and **NumP
   - Configurable auto-stop countdown timers (3s, 5s, 10s, 30s)
   - Abort transmission button
 
-### 6. 💾 Raw I/Q Recorder & Player
+### 6. Raw I/Q Recorder & Player
 - **Record**: Captures live RF I/Q directly to disk:
   - Native HackRF format (`.c8` 8-bit signed interleaved)
   - GNU Radio float format (`.cf32` complex float 32)
@@ -92,13 +92,13 @@ Built from the ground up with **Python 3**, **PyQt5**, **pyqtgraph**, and **NumP
   - JSON metadata sidecar (`.json`) preserving frequency, sample rate, and timestamps.
 - **Replay**: Play back captured RF files in a seamless loop with full spectrum and demodulator operation.
 
-### 7. 🧪 Built-in RF Physics Simulator
+### 7. Built-in RF Physics Simulator
 - Allows developers and users to explore, test, and demonstrate all features **without needing physical hardware plugged in**.
 - Generates realistic thermal noise floor, simulated FM broadcast stations with audio, aviation AM carriers, and intermittent 433.92 MHz keyfob bursts!
 
 ---
 
-## 🛠️ Hardware Requirements & Windows Driver Setup
+## Hardware Requirements & Windows Driver Setup
 
 ### Physical HackRF One Setup (Windows):
 1. Plug your **HackRF One** into a USB 2.0 or 3.0 port.
@@ -112,7 +112,7 @@ Built from the ground up with **Python 3**, **PyQt5**, **pyqtgraph**, and **NumP
 
 ---
 
-## 🚀 Quickstart & Usage
+## Quickstart & Usage
 
 ### 1. Installation
 Ensure Python 3.10+ is installed, then install requirements:
@@ -146,7 +146,7 @@ python -m unittest discover tests
 
 ---
 
-## 📂 Project Architecture
+## Project Architecture
 
 ```
 HackRFStudio/
@@ -191,7 +191,7 @@ HackRFStudio/
 
 ---
 
-## 🛡️ HackRF One Hardware Specifications Supported
+## HackRF One Hardware Specifications Supported
 - **Operating Frequency**: 1 MHz to 6 GHz (continuous)
 - **Sample Rate**: 2 MSPS to 20 MSPS
 - **Resolution**: 8-bit quadrature (I/Q)
