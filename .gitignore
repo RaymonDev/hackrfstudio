@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.c8
+*.cf32
+*.bin
+*.wav
+*.json
+!package.json
+.vscode/
+.idea/
