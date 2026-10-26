@@ -9,3 +9,4 @@ __pycache__/
 !package.json
 .vscode/
 .idea/
+generate_screenshots.py
